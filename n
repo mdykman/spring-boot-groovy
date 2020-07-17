@@ -1,0 +1,2 @@
+cat ../items3.json | groovy com/atsspec/rules/h.groovy 2> /dev/null | jtl -e .
+

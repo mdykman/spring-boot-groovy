@@ -1,0 +1,126 @@
+
+rule 
+{
+	rule_id: int/id,
+	from_category_id: int/id,
+	to_category_id: int/id,
+	description: string,
+	rule_text: string
+}
+// category faucet->sink
+
+===========================
+
+faucet->sink
+// faucet must have sink
+// where
+if(sink) switch(faucet.pipes)
+    case 1: sink.holes = 1 or sink.holes = 3
+    case 2: sink.holes = 2
+    case 3: sink.holes = 3
+// facet
+===========================
+    switch(faucet.pipes)
+       case 1: faucet.pipediameter < sink.holediameter OR faucet.pipeguage < sink.centreholediameter
+       case 2:
+       case 3:
+
+===========================
+  if(faucet.pipes = 1) MATCH
+
+===========================
+//  if(faucet.pipes > 1) 
+  if(faucet.pipeoncentre =(-/+ 1/4 inch) sink.holeoncentre
+===========================
+((sink.holediameter - faucet.pipeguage) / 2) < abs(sink.holedistance-faucet.pipedistance)
+===========================
+
+if(faucet.connection_type) {
+	musthave (powercable)
+}
+===========================
+
+if(faucet.connection_type) {
+	connectors(faucet.connection_type, powercable.connection) // connector wrong
+	powercable.voltage = faucet.voltage
+	powercable.amprs >= faucet.amps
+	powercable.watts >= faucet.watts
+}
+
+
+===========================
+if(carrier.negative_power) {
+    ! faucet.connection_type
+}
+
+===========================
+
+sink.drainagesize = drainage.flangesize (number + unit)
+===========================
+
+Category
+{
+    category_id: int/id,
+	name: string,
+	description: string
+}
+
+Product
+
+{
+	product_id: int,
+	name: string,
+	description: string,
+	date_added: date,
+	make: string,
+	model: string,
+	factory_id: string,
+	brand: string,
+	category: int/id,
+	attributes: {
+		key: {
+			name: string,
+			descriptions: string,
+			value: string,
+			unit: unit
+		}
+	},
+	options: {
+		key : {
+			name: string,
+			descriptions: string,
+			value: string
+		}
+	}
+
+}
+
+
+Multi-Product
+{
+	[
+		{product ( 1+) }
+	]
+}
+
+Drawing
+{
+	[
+		{Multi-Product ( 1+)}
+	]
+}
+
+Room 
+{
+	[
+		{Drawing ( 1+)}
+	]
+}
+
+Spec / Quote
+
+{
+	[
+		{Room ( 1+)}
+	]
+}

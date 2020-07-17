@@ -1,0 +1,34 @@
+plugins {
+    id 'org.springframework.boot' version '1.5.9.RELEASE'
+}
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+
+	compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.9'
+	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.45'
+
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.9.RELEASE'
+	// https://mvnrepository.com/artifact/org.springframework/spring-jcl
+	//  compile group: 'org.springframework', name: 'spring-jcl', version: '5.0.4.RELEASE'
+	
+
+	// https://mvnrepository.com/artifact/com.zaxxer/HikariCP
+	compile group: 'com.zaxxer', name: 'HikariCP', version: '2.7.4'
+	
+	compile group: 'io.dropwizard.metrics', name: 'metrics-core', version: '4.0.2'
+	compile group: 'io.dropwizard.metrics', name: 'metrics-annotation', version: '4.0.2'
+	compile group: 'io.dropwizard.metrics', name: 'metrics-servlet', version: '4.0.2'
+	compile group: 'io.dropwizard.metrics', name: 'metrics-jmx', version: '4.0.2'
+
+
+}

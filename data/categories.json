@@ -1,0 +1,25 @@
+[{
+   "category_id": 1,
+   "name": "Faucet",
+   "description": "Faucet"
+}, {
+   "category_id": 2,
+   "name": "Basin",
+   "description": "Kitchen Sink"
+}, {
+   "category_id": 3,
+   "name": "Sink",
+   "description": "Bathroom Sink"
+}, {
+   "category_id": 4,
+   "name": "Cables",
+   "description": "Power Cables"
+}, {
+   "category_id": 5,
+   "name": "Carriers",
+   "description": "Holds Wall mounted Sink"
+}, {
+   "category_id": 6,
+   "name": "Drainage",
+   "description": "Removes waste water"
+}]

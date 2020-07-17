@@ -1,0 +1,228 @@
+{
+	"Faucet": {
+		"product_id": 1,
+		"name": "Faucet 1",
+		"description": "Test Faucet",
+		"date_added": "today",
+		"make": "Moen",
+		"model": "T44s",
+		"factory_id": "Mt44s",
+		"brand": "Moen",
+		"category": 1,
+		"attributes": {
+			"powered": {
+				"name": "powered",
+				"description": "Is Electrically Powered",
+				"value": true,
+				"unit": null
+			},
+			"power-voltage": {
+				"name": "voltage",
+				"description": "Voltage",
+				"value": 12,
+				"unit": null
+			},
+			"power-ampheres": {
+				"name": "amps",
+				"description": "amps",
+				"value": 0.5,
+				"unit": null
+			},
+			"power-watts": {
+				"name": "wattage",
+				"description": "Is Electrically Powered",
+				"value": 6,
+				"unit": null
+			},
+			"power_type": {
+				"name": "Type of Power",
+				"description": "How This needs to be powered",
+				"value": "Direct Current",
+				"unit": null
+			},
+			"connection_type": {
+				"name": "Connection Type",
+				"description": "What connection Types are there",
+				"value": "T33 F Socket",
+				"unit": null
+
+			},
+			"motion_sensor": {
+				"name": "motion_sensor",
+				"description": "Motion Sensor",
+				"value": "Infrared",
+				"unit": null
+			},
+			"num_pipes": {
+				"name": "num_pipes",
+				"description": "How Many Pipes",
+				"value": 3,
+				"unit": null
+			},
+			"pipe_gauge": {
+				"name": "Gauge",
+				"description": "How Thick is the pipe",
+				"value": 14,
+				"unit": "gauge"
+			},
+			"pipe_on_center": {
+				"name": "On Center",
+				"description": "Distance between center points on pipes",
+				"value": 6,
+				"unit": "Inch"
+			},
+			"pipe_diameter": {
+				"name": "Diameter of Pipe",
+				"description": "What is Diameter of the pipe",
+				"value": 0.5,
+				"unit": "Inch"
+			}
+
+		},
+		"options": {
+			"Plating": {
+				"name": "Chrome",
+				"descriptions": "Chrome",
+				"value": "Starlight Chrome"
+
+			}
+		}
+
+	},
+	"Sink": {
+		"product_id": 2,
+		"name": "Sink 1",
+		"description": "Test Sink",
+		"date_added": "today",
+		"make": "AS",
+		"model": "72334",
+		"factory_id": "AS73224",
+		"brand": "American Standard",
+		"category": 3,
+		"attributes": {
+			"num_Faucet_holes": {
+				"name": "Faucet Holes",
+				"description": "How Many faucet Holes",
+				"value": 3,
+				"unit": null
+			},
+			"Faucet_hole_Diameter": {
+				"name": "Diameter",
+				"description": "How big are hole diameter",
+				"value": 1.5,
+				"unit": "Inch"
+			},
+			"Faucet_Hole_on_center": {
+				"name": "On Center",
+				"description": "Distance between center points on Holes",
+				"value": 6,
+				"unit": "Inch"
+			},
+			"Drainage_Size": {
+				"name": "Drainage",
+				"description": "Size of drainage flange",
+				"value": 3,
+				"unit": "Inch"
+			},
+
+			"mounting_configuration": {
+				"name": "Wall Mounted",
+				"description": "Sink must be mounted to the wall",
+				"value": "F250",
+				"unit": null
+			}
+
+		},
+		"options": {
+			"Plating": {
+				"name": "Chrome",
+				"description": "Chrome",
+				"value": "Starlight Chrome"
+
+			}
+		}
+
+	},
+	"Power Cable": {
+		"product_id": 3,
+		"name": "Cable 1",
+		"description": "Power Cable",
+		"date_added": "today",
+		"make": "TaTa",
+		"model": "28s",
+		"factory_id": "S28s",
+		"brand": "TaTa",
+		"category": 4,
+		"attributes": {
+			"Voltage": {
+				"name": "Voltage",
+				"description": "Maximum Voltage this cable allows",
+				"value": 12,
+				"unit": null
+			},
+			"wattage": {
+				"name": "Wattage",
+				"description": "Maximum Wattage this cable allows",
+				"value": 6,
+				"unit": null
+			},
+			"connection": {
+				"name": "Male Connection",
+				"description": "Male connection",
+				"value": "T33 M Socket",
+				"unit": null
+			}
+
+		}
+	},
+	"Carrier": {
+		"product_id": 4,
+		"name": "Carrier 1",
+		"description": "Mounts Sink to wall",
+		"date_added": "today",
+		"make": "Mitsubishi",
+		"model": "F420",
+		"factory_id": "MF420",
+		"brand": "ZOnkers",
+		"category": 5,
+		"attributes": {
+			"weightLimit": {
+				"name": "Weight Limit",
+				"description": "How Heavy Sink it can manage",
+				"value": 300,
+				"unit": "kg"
+			},
+			"moutingBraket": {
+				"name": "Bracket",
+				"description": "COnfiguration of scews",
+				"value": "F250",
+				"unit": null
+			},
+			"NegativePower": {
+				"name": "No Power",
+				"description": "Made by Amish and wont work with power",
+				"value": true,
+				"unit": null
+			}
+		}
+	},
+	"Drainage": {
+		"product_id": 5,
+		"name": "P Trap 1",
+		"description": "Traps Pee",
+		"date_added": "today",
+		"make": "Standard",
+		"model": "flange2",
+		"factory_id": "FL25",
+		"brand": "FooBar",
+		"category": 6,
+		"attributes": {
+			"Flange_Size": {
+				"name": "Size of Flange",
+				"description": "How Wide is Flange",
+				"value": 3,
+				"unit": "Inches"
+			}
+		}
+	}
+}

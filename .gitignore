@@ -1,0 +1,10 @@
+
+.gradle
+.classpath
+.project
+.settings
+*.sw?
+.sw?
+bin/
+build/
+*~
